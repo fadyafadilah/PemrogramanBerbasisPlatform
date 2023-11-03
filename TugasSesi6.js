@@ -71,7 +71,7 @@ app.get('/name', (req, res) => {
     res.json(nameData);
 });
 
-// Route untuk permintaan yang tidak cocok
+// Route permintaan yang tidak cocok
 app.use((req, res) => {
     res.status(400).send('Bad Request');
 });
